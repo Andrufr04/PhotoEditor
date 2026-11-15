@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Green background -->
+    <path
+        android:fillColor="#3D7250"
+        android:pathData="M0,0 H108 V108 H0 Z"/>
+
+    <!-- Shopping basket handle -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M34,47 L45,30 Q54,21 63,30 L74,47"/>
+
+    <!-- Basket body -->
+    <path
+        android:fillColor="#E3F0DE"
+        android:pathData="M24,46 L84,46 L77,78 Q76,82 71,82 L37,82 Q32,82 31,78 Z"/>
+
+    <!-- Basket top -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,43 H86 Q89,43 89,47 L89,51 Q89,54 86,54 H22 Q19,54 19,51 V47 Q19,43 22,43 Z"/>
+
+    <!-- Basket lines -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#5A9468"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M43,60 L46,73 M54,60 V73 M65,60 L62,73"/>
+
+    <!-- Checkmark badge -->
+    <path
+        android:fillColor="#A8D69D"
+        android:pathData="M73,59
+                          A16,16 0,1 1,72.99 59 Z"/>
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M65,75 L71,81 L82,68"/>
+
+</vector>

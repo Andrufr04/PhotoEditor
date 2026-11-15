@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F7FAF5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo Editor"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#253D2D"/>
+
+    <Button
+        android:id="@+id/selectPhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Завантажити фото"
+        android:backgroundTint="#3D7250"/>
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#DDEDD9"
+        android:scaleType="fitCenter"
+        android:contentDescription="Попередній перегляд фото"/>
+
+    <!-- Блок фільтрів -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фільтри:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#253D2D"
+        android:layout_marginBottom="4dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/originalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Original"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/grayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="BW"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/sepiaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Sepia"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/brightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Bright"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/coolButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Cool"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/invertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Invert"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/warmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Warm"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/contrastButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrast"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Блок інструментів та фігур -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Інструменти та малювання:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#253D2D"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/drawModeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#52796F"
+                android:text="Пензель: ВИМК"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/brushColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#E63946"
+                android:text="Колір"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/circleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#52796F"
+                android:text="+ Коло"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/rectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#52796F"
+                android:text="+ Рамка"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/splitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#52796F"
+                android:text="Розрізати на 4"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/rotateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#52796F"
+                android:text="Поворот 90°"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/watermarkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#52796F"
+                android:text="+ Підпис"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Кнопки збереження та поширення -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Зберегти"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3D7250"/>
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="Поділитися"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3D7250"/>
+    </LinearLayout>
+
+</LinearLayout>
